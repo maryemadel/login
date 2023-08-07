@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+
+<body>
+
+    <div class="container my-5 text-center">
+        <div class="group m-auto w-75 p-5">
+            <h1>Smart Login System</h1>
+            <input id="signupname" class="form-control my-3" placeholder="Enter your name" type="text">
+            <input id="signupemail" onblur="validateEmail(this)" class="form-control my-3" placeholder="Enter your email" type="text">
+            <input id="signuppassword" class="form-control my-3" placeholder="Enter password" type="password">
+            <p id="requierd" class="d-none" style="color: red;"> All inputs are required!! </p>
+            <p id="succ" class="d-none" style="color: green;"> Successfly added! </p>
+            <p id="exist" class="d-none" style="color: orange;"> User Already Exists </p>
+            <p id="emvali" class="d-none" style="color: rgb(255, 0, 0);"> Invalid Email </p>
+
+            <button   id="signupbutton" type="button"  class=" w-100 my-3">Sign Up</button>
+            <p style="color: white;">You have an account? <a  href="index.html" style="color: white">Sign In</a></p>
+
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
